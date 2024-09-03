@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.6;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+header {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+#main-doc {
+  margin-left: 350px; /* Adjust according to navbar width */
+  padding: 20px;
+}
+
+nav {
+  display: block;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20em; /* Adjust width as needed */
+  height: 100%;
+  background-color: #f4f4f4;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+#navbar header {
+  font-size: 32px;
+  margin: 14px 0px -5px 18px;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
+#navbar ul {
+  height: 88%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  font-size: 24px;
+}
+
+#navbar li {
+  top: 0px;
+  left: 0px;
+  list-style: none;
+  font-size: 18px;
+  border-top: 1px solid;
+  border-color: gray;
+  position: relative;
+  min-width: 100%;
+}
+
+#navbar li {
+  margin-left: -50px;
+  padding: 10px 0 10px 50px;
+  color: #4d4e53;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#navbar a:hover {
+  opacity: 70%;
+}
+
+#navbar a:active {
+  color: black;
+  transition: 0.3s;
+}
+
+#main-doc header {
+  font-size: 26px;
+  margin-left: 15px;
+}
+
+#ma section article {
+  color: #4d4e53;
+  margin: 15px 15px 15px 35px;
+  font-size: 0.96em;
+}
+
+.main-section {
+  margin: 0 0 30px 0;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%; /* Adjust width as needed */
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+  background-color: #f7f7f7;
+}
+
+code {
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: #f7f7f7;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+code {
+  font-family: monospace;
+}
+
+code {
+  background-color: #eee;
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-family: monospace;
+}
+
+#reference p {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  padding-right: 20px;
+  white-space: pre-wrap;
+}
+
+.nav-link:hover {
+  color: #007acc;
+  text-decoration: underline;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+@media (max-width: 768px) {
+  #navbar {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  #main-doc {
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>technical document</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>JS Documentation</header>
+      <ul>
+        <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+        <li><a href="#JavaScript_and_Java" class="nav-link">JavaScript and Java</a></li>
+        <li><a href="#Pros_and_cons" class="nav-link">Pros and cons</a></li>
+        <li><a href="#Hello_World" class="nav-link">Hello World</a></li>
+        <li><a href="#Data_types" class="nav-link">Data types</a></li>
+        <li><a href="#Variables" class="nav-link">Variables</a></li>
+        <li><a href="#Global_Variables" class="nav-link">Global Variables</a></li>
+        <li><a href="#Constant_Variables" class="nav-link">Constant Variables</a></li>
+        <li><a href="#if_..._else_statements" class="nav-link">if ... else statements</a></li>
+        <li><a href="#while_loops" class="nav-link">while loops</a></li>
+        <li><a href="#for_loops" class="nav-link">for loops</a></li>
+        <li><a href="#switch_statement" class="nav-link">switch statement</a></li>
+        <li><a href="#Functions" class="nav-link">Functions</a></li>
+        <li><a href="#References" class="nav-link">References</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section id="Introduction" class="main-section">
+        <header>Introduction</header>
+        <article>
+          <p>
+            JavaScript is a scripting or programming language that allows you to
+            implement complex features on web pages — every time a web page does
+            more than just sit there and display static information for you to
+            look at — displaying timely content updates, interactive maps,
+            animated 2D/3D graphics, scrolling video jukeboxes, etc. — you can
+            bet that JavaScript is probably involved. It is the third layer of
+            the layer cake of standard web technologies, two of which (HTML and
+            CSS) we have covered in much more detail in other parts of the
+            Learning Area.
+          </p>
+          <ul>
+            <li>
+              <b>HTML</b> is the markup language that we use to structure and
+              give meaning to our web content, for example defining paragraphs,
+              headings, and data tables, or embedding images and videos in the
+              page.
+            </li>
+            <li>
+              <b>CSS</b> is a language of style rules that we use to apply
+              styling to our HTML content, for example setting background colors
+              and fonts, and laying out our content in multiple columns.
+            </li>
+            <li>
+              <b>JavaScript</b> is a scripting language that enables you to
+              create dynamically updating content, control multimedia, animate
+              images, and pretty much everything else. (Okay, not everything,
+              but it is amazing what you can achieve with a few lines of
+              JavaScript code.)
+            </li>
+          </ul>
+          <p>
+            The three layers build on top of one another nicely. Let's take a
+            button as an example.
+          </p>
+        </article>
+      </section>
+      <section id="JavaScript_and_Java" class="main-section">
+        <header>JavaScript and Java</header>
+        <article>
+          <p>
+            JavaScript is a beginner-friendly programming language that allows
+            developers to design interactive websites. On the other hand, Java
+            is a complex language used to build sophisticated applications like
+            Android apps, chatbots, and financial software.
+          </p>
+
+          <p>
+            Java and JavaScript have distinct purposes, strengths, and
+            limitations. These factors can influence the types of projects you
+            can create and the careers you pursue. Some tech professionals learn
+            both Java and JavaScript, but they may be optional, depending on
+            your professional goals.
+          </p>
+
+          <p>
+            Many people think that moving from Java to JavaScript is like
+            switching from driving a car to driving a lorry – they expect it to
+            be fairly similar since both are vehicles. However, Java and
+            JavaScript are as distinct from each other as a car and a sailboat.
+            While both are a means of transportation, their skills, knowledge,
+            and environment are entirely different.
+          </p>
+
+          <p>
+            JavaScript is an interpreted language, which means it must be
+            executed – or activated – by a JavaScript engine. The developer
+            writes JavaScript code and embeds it in a webpage. The code remains
+            dormant until a user opens the webpage in a web browser like Google
+            Chrome or Mozilla Firefox. These web browsers contain JavaScript
+            engines that execute the JavaScript code, activating interactive
+            features like image carousels and drop-down menus.
+          </p>
+
+          <p>
+            By contrast, Java is a compiled language requiring two steps to
+            execute. First, a compiler translates the human-written source code
+            into bytecode, the language of computers. The Java Virtual Machine
+            (JVM) interprets the bytecode into a usable format for a specific
+            operating system and executes it. This process allows developers to
+            write Java code for any platform.
+          </p>
+        </article>
+      </section>
+      <section id="Pros_and_cons" class="main-section">
+        <header id="prscns">Pros and cons</header>
+        <article>
+          <table>
+            <tr>
+              <td><b>Advantages of JavaScript</b></td>
+              <td><b>Disadvantages of JavaScript</b></td>
+            </tr>
+            <tr>
+              <td>Enables dynamic and interactive web content.</td>
+              <td>
+                Vulnerable to security threats such as cross-site scripting
+                (XSS).
+              </td>
+            </tr>
+            <tr>
+              <td>Enhances user experience through client-side processing.</td>
+              <td>Performance limitations due to single-threaded execution.</td>
+            </tr>
+
+            <tr>
+              <td>
+                Extensive library support via frameworks like React, and
+                Angular.
+              </td>
+              <td>
+                Inconsistencies across different browsers may require extra
+                testing.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Seamless integration with HTML and CSS for web development.
+              </td>
+              <td>
+                Dependence on client-side processing can hinder accessibility.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Facilitates the creation of responsive, mobile-friendly
+                interfaces.
+              </td>
+              <td>
+                Debugging and troubleshooting JavaScript code can be
+                challenging.
+              </td>
+            </tr>
+          </table>
+        </article>
+      </section>
+      <section id="Hello_World" class="main-section">
+        <header>Hello World</header>
+        <article>
+          <p>
+            To get started with writing JavaScript, open the Scratchpad and
+            write your first "Hello world" JavaScript code:
+          </p>
+          <code
+            >function greetMe(yourName) { alert("Hello " + yourName); }
+            greetMe("World");</code
+          >
+        </article>
+      </section>
+      <section id="Data_types" class="main-section">
+        <header>Data types</header>
+        <article>
+          <p>JavaScript Variables can be declared in 4 ways:</p>
+          <ul>
+            <li>Using var</li>
+            <li>Using let</li>
+            <li>Using const</li>
+          </ul>
+          <p>The <b>var</b> keyword was used in all JavaScript code from 1995 to 2015.</p>
+          <p>The <b>let</b> and <b>const</b> keywords were added to JavaScript in 2015.</p>
+          <p>The <b>var</b> keyword should only be used in code written for older browsers.</p>
+          <p>JavaScript has 8 Datatypes</p>
+          <ul>
+            <li>String</li>
+            <li>Number</li>
+            <li>Bigint</li>
+            <li>Boolean</li>
+            <li>Undefined</li>
+            <li>Null</li>
+            <li>Symbol</li>
+            <li>Object</li>
+          </ul>
+          <p>
+            The object data type can contain both built-in objects, and user
+            defined objects:
+          </p>
+          <p>Built-in object types can be:</p>
+          <code
+            >objects, arrays, dates, maps, sets, intarrays, floatarrays,
+            promises, and more.</code
+          >
+          <p>Most programming languages have many number types:</p>
+          <code
+            >Whole numbers (integers): byte (8-bit), short (16-bit), int
+            (32-bit), long (64-bit) Real numbers (floating-point): float
+            (32-bit), double (64-bit).</code
+          >
+          <p></code></p>
+        </article>
+      </section>
+      <section id="Variables" class="main-section">
+        <header id="variables">Variables</header>
+        <article>
+          <p>The <b>var</b> statement declares a variable.</p>
+          <p>Variables are containers for storing information.</p>
+          <p>
+            Creating a variable in JavaScript is called "declaring" a variable:
+          </p>
+          <code>var carName;</code>
+          <p>After the declaration,the variable is empty (it has no value).</p>
+          <p>To assign a value to the variable, use the equal sign</p>
+          <code>carName= "Volvo";</code>
+          <p>
+            The var statement declares a variable. Variables are containers for
+            storing information. Creating a variable in JavaScript is called
+            "declaring" a variable:
+          </p>
+          <code>var carName = "Volvo";</code>
+
+          <p>All JavaScript variables must be identified with unique names.</p>
+
+          <p>These unique names are called identifiers.</p>
+
+          <p>
+            Identifiers can be short names (like x and y) or more descriptive
+            names (age, sum, totalVolume).
+          </p>
+          <p>
+            The general rules for constructing names for variables (unique
+            identifiers) are:
+          </p>
+          <ul>
+            <li>
+              Names can contain letters, digits, underscores, and dollar signs.
+            </li>
+            <li>Names must begin with a letter.</li>
+            <li>
+              Names can also begin with $ and _ (but we will not use it in this
+              tutorial).
+            </li>
+            <li>Names are case sensitive (y and Y are different variables).</li>
+            <li>
+              Reserved words (like JavaScript keywords) cannot be used as names.
+            </li>
+          </ul>
+          <p>A variable may belong to one of the following scopes:</p>
+            <ul>
+            <li>Global scope: The default scope for all code running in script mode.</li>
+            <li>Module scope: The scope for code running in module mode.</li>
+            <li>Function scope: The scope created with a function.</li>
+            </ul>
+          <p>In addition, variables declared with let or const can belong to an additional scope:</p>
+          <ul>
+          <li>Block scope: The scope created with a pair of curly braces (a block).</li>
+          </ul>
+        </article>
+      </section>
+      <section id="Global_Variables" class="main-section">
+        <header>Global Variables</header>
+        <article>
+          <p>Global variables are in fact properties of the global object.</p>
+
+          <p>In web pages, the global object is window, so you can read and set global variables using the window.variable syntax. In all environments, the globalThis variable (which itself is a global variable) may be used to read and set global variables. This is to provide a consistent interface among various JavaScript runtimes.</p>
+            
+          <p>Consequently, you can access global variables declared in one window or frame from another window or frame by specifying the window or frame name. For example, if a variable called phoneNumber is declared in a document, you can refer to this variable from an iframe as parent.phoneNumber.</p>
+        </article>
+      </section>
+      <section id="Constant_Variables" class="main-section">
+        <header>Constant Variables</header>
+        <article>
+          <p>You can create a read-only, named constant with the const keyword. The syntax of a constant identifier is the same as any variable identifier: it must start with a letter, underscore, or dollar sign ($), and can contain alphabetic, numeric, or underscore characters.</p>
+          <code>const PI = 3.14;</code>
+          <p>A constant cannot change value through assignment or be re-declared while the script is running. It must be initialized to a value. The scope rules for constants are the same as those for let block-scope variables.</p>
+          <p>You cannot declare a constant with the same name as a function or variable in the same scope. For example:</p>
+          <code>// THIS WILL CAUSE AN ERROR
+            function f() {}
+            const f = 5;
+            
+            // THIS WILL CAUSE AN ERROR TOO
+            function f() {
+              const g = 5;
+              var g;
+            }</code>
+            <p>However, const only prevents re-assignments, but doesn't prevent mutations. The properties of objects assigned to constants are not protected, so the following statement is executed without problems.</p>
+            <code>const MY_OBJECT = { key: "value" };
+              MY_OBJECT.key = "otherValue";</code>
+            <p>contents of an array is also not protected, so the following srarement can be executed without problems.</p>
+            <code>const MY_ARRAY = ["HTML", "CSS"];
+              MY_ARRAY.push("JAVASCRIPT");
+              console.log(MY_ARRAY); // ['HTML', 'CSS', 'JAVASCRIPT'];</code>
+        </article>
+      </section>
+      <section id="if_..._else_statements" class="main-section">
+        <header>if ... else statements</header>
+        <article>
+          <p>Use the if statement to execute a statement if a logical condition is true. Use the optional else clause to execute a statement if the condition is false.</p>
+        <code>if (condition) {
+          statement1;
+        } else {
+          statement2;
+        }</code>
+        <p>You can also compound the statements using else if to have multiple conditions tested in sequence, as follows:</p>
+        <code>if (condition1) {
+          statement1;
+        } else if (condition2) {
+          statement2;
+        } else if (conditionN) {
+          statementN;
+        } else {
+          statementLast;
+        }</code>
+        <p>The following values evaluate to false</p>
+        <ul>
+          <li>false</li>
+          <li>undefined</li>
+          <li>null</li>
+          <li>0</li>
+          <li>NaN</li>
+          <li>the empty string ("")</li>
+        </ul>
+        </article>
+      </section>
+      <section id="while_loops" class="main-section">
+        <header>while loops</header>
+        <article>
+          <p>A while statement executes its statements as long as a specified condition evaluates to true. A while statement looks as follows:</p>
+          <code>while (condition)
+            statement</code>
+          <p>If the condition becomes false, statement within the loop stops executing and control passes to the statement following the loop.</p>
+        </article>
+      </section>
+      <section id="for_loops" class="main-section">
+        <header>for loops</header>
+        <article>
+          <p>JavaScript supports different kinds of loops:</p>
+          <ul>
+            <li><b>for</b> - loops through a block of code a number of times</li>
+            <li><b>for/in</b> - loops through the properties of an object</li>
+            <li><b>for/of</b> - loops through the values of an iterable object</li>
+            <li><b>while</b> - loops through a block of code while a specified condition is true</li>
+            <li><b>do/while</b> - also loops through a block of code while a specified condition is true</li>
+          </ul>
+          <p>Here's an example of a for loop</p>
+          <code>for (let i = 0; i < 5; i++) {
+            text += "The number is " + i + "<br>";
+          }</code>
+        </article>
+      </section>
+      <section id="switch_statement" class="main-section">
+        <header>switch statement</header>
+        <article>
+          <p>A switch statement allows a program to evaluate an expression and attempt to match the expression's value to a case label. If a match is found, the program executes the associated statement.</p>
+          <code>switch (expression) {
+            case label1:
+              statements1;
+              break;
+            case label2:
+              statements2;
+              break;
+            // …
+            default:
+              statementsDefault;
+          }</code>
+        </article>
+      </section>
+      <section id="Functions" class="main-section">
+        <header>Functions</header>
+        <article>
+          <p>A function definition (also called a function declaration, or function statement) consists of the function keyword, followed by:</p>
+          <ul>
+            <li>The name of the function.</li>
+            <li>A list of parameters to the function, enclosed in parentheses and separated by commas.</li>
+            <li>The JavaScript statements that define the function, enclosed in curly braces, { /* … */ }.</li>
+          </ul>
+          <p>For example, the following code defines a simple function named square:</p>
+          <code>function square(number) {
+            return number * number;
+          }</code>
+          <p>The function square takes one parameter, called number. The function consists of one statement that says to return the parameter of the function (that is, number) multiplied by itself. The return statement specifies the value returned by the function, which is number * number.</p>
+
+          <p>Parameters are essentially passed to functions by value — so if the code within the body of a function assigns a completely new value to a parameter that was passed to the function, the change is not reflected globally or in the code which called that function.</p>
+          <p>When you pass an object as a parameter, if the function changes the object's properties, that change is visible outside the function, as shown in the following example:</p>
+          <code>
+            function myFunc(theObject) {
+              theObject.make = "Toyota";
+            }
+            
+            const mycar = {
+              make: "Honda",
+              model: "Accord",
+              year: 1998,
+            };
+            
+            console.log(mycar.make); // "Honda"
+            myFunc(mycar);
+            console.log(mycar.make); // "Toyota"
+          </code>
+        </article>
+      </section>
+      <section id="References" class="main-section">
+        <header>References</header>
+        <article>
+          <p>
+            MDN Web Docs (2024, August 3)
+            <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript">Docs</a>
+          </p>
+          <p>
+            Team Multiverse. (2023, November 29). Java vs. JavaScript:
+            Differences between the two languages. Multiverse.io. <br>
+            https://www.multiverse.io/en-GB/blog/java-vs-javascript
+          </p>
+          <p>
+            W3Schools.com. (2015). W3schools.com.
+            https://www.w3schools.com/jsref/jsref_statements.asp
+          </p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
+
